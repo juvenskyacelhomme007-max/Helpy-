@@ -1,0 +1,77 @@
+{
+  "version": "1.0",
+  "entities": {
+    "User": {
+      "collection": "users",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "email": { "type": "string", "required": false },
+        "displayName": { "type": "string", "required": true },
+        "photoUrl": { "type": "string", "required": false },
+        "phoneNumber": { "type": "string", "required": false },
+        "country": { "type": "string", "required": true },
+        "currency": { "type": "string", "required": true },
+        "role": { "type": "string", "required": true },
+        "createdAt": { "type": "timestamp", "required": false }
+      }
+    },
+    "Product": {
+      "collection": "products",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true },
+        "price": { "type": "number", "required": true },
+        "currency": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "condition": { "type": "string", "required": false },
+        "imageUrl": { "type": "string", "required": false },
+        "country": { "type": "string", "required": true },
+        "city": { "type": "string", "required": true },
+        "sellerId": { "type": "string", "required": true },
+        "sellerName": { "type": "string", "required": true },
+        "sellerContact": { "type": "string", "required": false },
+        "createdAt": { "type": "timestamp", "required": false },
+        "updatedAt": { "type": "timestamp", "required": false }
+      }
+    },
+    "Service": {
+      "collection": "services",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "title": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true },
+        "rate": { "type": "number", "required": true },
+        "currency": { "type": "string", "required": true },
+        "pricingType": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "providerId": { "type": "string", "required": true },
+        "providerName": { "type": "string", "required": true },
+        "providerContact": { "type": "string", "required": false },
+        "country": { "type": "string", "required": true },
+        "city": { "type": "string", "required": true },
+        "rating": { "type": "number", "required": false },
+        "createdAt": { "type": "timestamp", "required": false }
+      }
+    },
+    "Business": {
+      "collection": "businesses",
+      "fields": {
+        "id": { "type": "string", "required": true },
+        "name": { "type": "string", "required": true },
+        "category": { "type": "string", "required": true },
+        "description": { "type": "string", "required": true },
+        "address": { "type": "string", "required": true },
+        "city": { "type": "string", "required": true },
+        "country": { "type": "string", "required": true },
+        "phone": { "type": "string", "required": false },
+        "email": { "type": "string", "required": false },
+        "website": { "type": "string", "required": false },
+        "ownerId": { "type": "string", "required": true },
+        "rating": { "type": "number", "required": false },
+        "verified": { "type": "boolean", "required": false },
+        "createdAt": { "type": "timestamp", "required": false }
+      }
+    }
+  }
+}

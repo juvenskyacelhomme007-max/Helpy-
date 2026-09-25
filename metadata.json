@@ -1,0 +1,6 @@
+{
+  "name": "Helpy",
+  "description": "Helpy - Plateforme internationale pour produits, services et commerces (Acheter, Vendre, Réserver, Contacter)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
